@@ -1,4 +1,3 @@
-package POO;
 
 class Carro {
     String marca;

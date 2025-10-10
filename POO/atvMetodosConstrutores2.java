@@ -1,6 +1,5 @@
 //classe, com 5 atributos, 2 métodos, 1 construtor
 
-package POO;
 class Maquiagem{
     private String produto;
     String marca;

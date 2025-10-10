@@ -1,4 +1,3 @@
-package POO;
 class Pessoa {
     // Atributos (características)
     String nome;
