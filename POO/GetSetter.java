@@ -25,7 +25,7 @@ public class ContaBancaria {
     }
     
     // Setter - permite MODIFICAR o valor (com validação)
-    public void setTitular(String titular) {
+    public void setTitular(String titular) { 
         if (titular != null && !titular.isEmpty()) {
             this.titular = titular;
         } else {
