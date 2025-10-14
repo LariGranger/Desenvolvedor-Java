@@ -1,4 +1,4 @@
-public class ContaBancaria {
+class ContaBancaria {
     // Atributos privados (encapsulados)
     private String titular;
     private double saldo;
