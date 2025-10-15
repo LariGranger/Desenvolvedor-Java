@@ -22,6 +22,13 @@ class atvControleEstoque {
     5. Método removerEstoque(int quantidade) que decremente a
     quantidade */
 
+    public atvControleEstoque() {
+        this.nome = "";
+        this.codigo = "";
+        this.quantidade = 0;
+        this.precoUnitario = 0;
+    }
+
     public atvControleEstoque(String nome, String codigo, int quantidade, int precoUnitario){
         this.nome = nome;
         this.codigo = codigo;
@@ -58,6 +65,21 @@ class atvControleEstoque {
             this.codigo = codigo;
         } else {
             System.out.println("Código inválido!");
+        }
+    }
+
+    public void setQuantidade(int quantidade) { 
+        if (quantidade >= 0) {
+            this.quantidade = quantidade;
+        } else {
+            System.out.println("Quantidade inválida!");
+        }
+    }
+    public void setPrecoUnitario(int precoUnitario) { 
+        if (precoUnitario >= 0) {
+            this.precoUnitario = precoUnitario;
+        } else {
+            System.out.println("precoUnitario inválida!");
         }
     }
 
