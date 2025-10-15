@@ -12,6 +12,6 @@
     ○ Método calcularTempoLeitura() que retorne o tempo estimado de
     leitura
     ○ Método exibirInformacoes() que imprima todos os detalhes do livro */
-public class atvClassLivro {
+public class Livro {
     
 }

@@ -1,6 +1,6 @@
 /*Atividade 2: Controle de Estoque de Produtos*/
 
-class atvControleEstoque {
+class Produto {
     /*Desenvolva uma classe Produto com:
     ● Atributos privados:
     1. nome (String)
@@ -22,14 +22,14 @@ class atvControleEstoque {
     5. Método removerEstoque(int quantidade) que decremente a
     quantidade */
 
-    public atvControleEstoque() {
+    public Produto() {
         this.nome = "";
         this.codigo = "";
         this.quantidade = 0;
         this.precoUnitario = 0;
     }
 
-    public atvControleEstoque(String nome, String codigo, int quantidade, int precoUnitario){
+    public Produto(String nome, String codigo, int quantidade, int precoUnitario){
         this.nome = nome;
         this.codigo = codigo;
         this.quantidade = quantidade;
@@ -85,13 +85,3 @@ class atvControleEstoque {
 
 }
 
-class controleProdutos {
-    public static void main(String[] args) {
-    /* ● Crie um programa com menu do-while para:
-    1. Cadastrar novo produto
-    2. Adicionar estoque
-    3. Remover estoque
-    4. Calcular valor total do estoque
-    5. Sair do programa */
-    }
-}
