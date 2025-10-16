@@ -79,7 +79,7 @@ class Produto {
         if (precoUnitario >= 0) {
             this.precoUnitario = precoUnitario;
         } else {
-            System.out.println("precoUnitario inválida!");
+            System.out.println("Preço Unitário inválido!");
         }
     }
 

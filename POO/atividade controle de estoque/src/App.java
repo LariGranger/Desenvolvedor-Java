@@ -4,9 +4,18 @@
     3. Remover estoque
     4. Calcular valor total do estoque
     5. Sair do programa */
+import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Scanner sc = new Scanner(System.in);
+        do {
+            int opcao;
+            System.out.println("1. Cadastrar novo produto");
+            System.out.println("2. Adicionar estoque");
+            System.out.println("3. Remover estoque ");
+            System.out.println("null");
+            System.out.println("null");
+        } while (opcao != 5);
     }
 }
 

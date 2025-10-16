@@ -1,17 +1,3 @@
-/*
-    Atividade 1: Classe Livro com Encapsulamento
-    Crie uma classe Livro com as seguintes características:
-    ● Atributos privados:
-    ○ titulo (String)
-    ○ autor (String)
-    ○ anoPublicacao (int)
-    ○ quantidadePaginas (int)
-    ● Métodos:
-    ○ Construtor completo que receba todos os atributos
-    ○ Métodos getters e setters para todos os atributos
-    ○ Método calcularTempoLeitura() que retorne o tempo estimado de
-    leitura
-    ○ Método exibirInformacoes() que imprima todos os detalhes do livro */
 public class Livro {
     private String titulo;
     private String autor;
@@ -30,11 +16,11 @@ public class Livro {
     }
 
     public void setTitulo(String titulo){
-        this.titulo = autor;
+        this.titulo = titulo;
     }
 
     public String getAutor(){
-        return titulo;
+        return autor;
     }
 
     public void setAutor(String autor){
@@ -58,15 +44,14 @@ public class Livro {
     }
 
     public int calcularTempoLeitura(){
-        return quantidadePaginas;
-        System.out.print("O tempo de leitura é de: " + quantidadePaginas);
+        return quantidadePaginas / 2; // tempo estimado de leitura em minutos
     }
 
-    public void exibirInformacoes(String titulo, String autor, int anoPublicacao, int quantidadePaginas){
-        System.out.println("Titulo: " + titulo);
+    public void exibirInformacoes(){
+        System.out.println("Título: " + titulo);
         System.out.println("Autor: " + autor);
-        System.out.println("Quantidade de Páginas: " + quantidadePaginas);
         System.out.println("Ano de Publicação: " + anoPublicacao);
+        System.out.println("Quantidade de Páginas: " + quantidadePaginas);
+        System.out.println("Tempo estimado de leitura (min): " + calcularTempoLeitura());
     }
-    
 }
