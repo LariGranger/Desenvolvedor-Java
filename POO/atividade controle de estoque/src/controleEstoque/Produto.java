@@ -1,3 +1,4 @@
+package controleEstoque;
 /*Atividade 2: Controle de Estoque de Produtos*/
 
 class Produto {
@@ -39,19 +40,7 @@ class Produto {
     public String getNome(){
         return nome;
     }
-
-    public String getCodigo(){
-        return codigo;
-    }
-
-    public int getQuantidade(){
-        return quantidade;
-    }
-
-    public int getPrecoUnitario(){
-        return precoUnitario;
-    }
-
+    
     public void setNome(String nome) { 
         if (nome != null && !nome.isEmpty()) {
             this.nome = nome;
@@ -60,6 +49,10 @@ class Produto {
         }
     }
 
+    public String getCodigo(){
+        return codigo;
+    }
+    
     public void setCodigo(String codigo) { 
         if (codigo != null && !codigo.isEmpty()) {
             this.codigo = codigo;
@@ -68,6 +61,10 @@ class Produto {
         }
     }
 
+    public int getQuantidade(){
+        return quantidade;
+    }
+    
     public void setQuantidade(int quantidade) { 
         if (quantidade >= 0) {
             this.quantidade = quantidade;
@@ -75,6 +72,11 @@ class Produto {
             System.out.println("Quantidade inválida!");
         }
     }
+
+    public int getPrecoUnitario(){
+        return precoUnitario;
+    }
+
     public void setPrecoUnitario(int precoUnitario) { 
         if (precoUnitario >= 0) {
             this.precoUnitario = precoUnitario;
