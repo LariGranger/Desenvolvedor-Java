@@ -17,6 +17,38 @@ public class App {
             System.out.println("4. Calcular valor total do estoque");
             System.out.println("5. Sair do programa");
             opcao = sc.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    System.out.println("Nome do Produto: ");
+                    String nome = sc.nextLine();
+                    System.out.println("Código do Produto: ");
+                    String codigo = sc.nextLine();
+                    System.out.println("Quantidade: ");
+                    int quantidade = sc.nextInt();
+                    System.out.println("Preço Unitário: ");
+                    int precoUnitario = sc.nextInt();
+
+                    Produto produto = new Produto();
+                    produto.setNome(nome);
+                    produto.setCodigo(codigo);
+                    produto.setQuantidade(quantidade);
+                    produto.setPrecoUnitario(precoUnitario);
+                    break;
+                case 2:
+                    
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+            
+                default:
+                    System.out.println("Opção inválida");
+                    break;
+            }
         } while (opcao != 5);
         sc.close();
     }

@@ -1,7 +1,7 @@
 package controleEstoque;
 /*Atividade 2: Controle de Estoque de Produtos*/
 
-class Produto {
+public class Produto {
     /*Desenvolva uma classe Produto com:
     ● Atributos privados:
     1. nome (String)
@@ -85,5 +85,23 @@ class Produto {
         }
     }
 
+    public void adicionarEstoque(int quantidade) {
+        if (quantidade > 0) {
+            this.quantidade += quantidade;
+            System.out.println("Estoque adicionado com sucesso!");
+        } else {
+            System.out.println("Quantidade inválida para adicionar.");
+        }
+    }
+
+    public void removerEstoque(int quantidade) {
+        if (quantidade > 0 && quantidade <= this.quantidade) {
+            this.quantidade -= quantidade;
+            System.out.println("Estoque removido com sucesso!");
+        } else {
+            System.out.println("Quantidade inválida para remover.");
+        }
+    }
 }
+
 
