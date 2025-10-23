@@ -1,0 +1,86 @@
+Enunciado — Sistema de Pagamento de 
+Funcionários 
+Uma empresa está enfrentando dificuldades para realizar corretamente os pagamentos de 
+seus funcionários. 
+Atualmente, existem três tipos de funcionários na empresa, e cada um possui uma 
+forma diferente de cálculo de pagamento. 
+O objetivo é organizar o fluxo de pagamento e criar um sistema que realize 
+automaticamente o cálculo correto da remuneração de cada tipo de funcionário, conforme 
+suas regras específicas: 
+● Funcionário Horista: recebe de acordo com o número de horas trabalhadas e o 
+valor da hora. Caso ultrapasse 160 horas no mês, deve receber um bônus de 10%. 
+● Funcionário Comissionado: recebe com base no total de vendas realizadas e na 
+taxa de comissão estabelecida. 
+● Funcionário Assalariado: recebe um salário fixo mensal acrescido de um bônus 
+adicional. 
+O sistema deve permitir o cadastro dos funcionários via teclado, exibir o pagamento 
+individual de cada um, calcular o total pago pela empresa e indicar qual funcionário 
+recebeu o maior valor no mês.
+Projeto Java — Sistema de Pagamento 
+de Funcionários 
+Objetivo 
+Desenvolver um sistema em Java para o cálculo de pagamento de funcionários, utilizando 
+conceitos de interfaces, classes abstratas, herança, polimorfismo e entrada de dados 
+via teclado (Scanner). 
+Requisitos do Projeto 
+Interface de Pagamento 
+● Criar uma interface que defina o método para calcular o pagamento de um 
+funcionário. 
+● Todas as classes concretas deverão implementar essa interface. 
+EXEMPLOS : PÁGINA DE INTERFACES 
+Classe Abstrata de Funcionário 
+● Criar uma classe abstrata contendo os atributos e comportamentos comuns a 
+todos os funcionários. 
+● Atributos obrigatórios: 
+○ Nome do funcionário 
+○ Identificação (ID) 
+○ (…) 
+● Métodos: 
+○ Construtor para inicializar os atributos 
+○ Métodos get e set (se necessário) 
+○ Método abstrato para o cálculo do pagamento (definido pela interface) 
+○ (...) 
+EXEMPLOS : CLASSES ABSTRATAS 
+Classes Concretas de Funcionários 
+Criar três tipos de funcionários, cada um com regras específicas de cálculo de 
+pagamento: 
+a) Funcionário Horista 
+● Cálculo com base no número de horas trabalhadas e no valor da hora. 
+● Caso o total de horas ultrapasse 160 horas no mês, deve receber um bônus de 
+10% sobre o valor total. 
+b) Funcionário Comissionado 
+● Cálculo com base no total de vendas realizadas e na taxa de comissão. 
+● O pagamento deve ser igual ao produto entre o valor total de vendas e a taxa de 
+comissão. 
+c) Funcionário Assalariado 
+● Cálculo com base em um salário fixo mensal. 
+● Deve receber o salário base acrescido de um bônus fixo no mês. 
+Programa Principal 
+Criar um programa principal que execute as seguintes etapas: 
+1. Permitir que o usuário cadastre funcionários via teclado, utilizando a classe 
+Scanner. 
+2. O sistema deve permitir o cadastro de diferentes tipos de funcionários (horista, 
+comissionado e assalariado). 
+3. Após o cadastro: 
+○ Exibir as informações de cada funcionário. 
+○ Calcular e mostrar o pagamento de cada um. 
+4. Calcular e exibir: 
+○ O total pago pela empresa no mês (somando todos os pagamentos). 
+○ O funcionário com maior pagamento no período. 
+Requisitos Técnicos e Conceituais 
+● Uso obrigatório de: 
+○ Interface 
+○ Classe abstrata 
+○ Herança 
+○ Polimorfismo 
+○ Coleção (por exemplo, ArrayList) para armazenar os funcionários 
+○ Entrada de dados via Scanner 
+● O sistema deve ser interativo e permitir múltiplos cadastros antes de exibir os 
+resultados. 
+● O programa deve ser organizado, modular e bem comentado. 
+Entregáveis 
+● Código-fonte completo do projeto (arquivos .java). 
+● Documento de especificação com: 
+○ Descrição do projeto. 
+○ Estrutura de classes e relações. 
+○ Explicação das regras de cálculo e funcionamento.
