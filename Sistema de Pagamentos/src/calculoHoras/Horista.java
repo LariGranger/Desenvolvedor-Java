@@ -5,7 +5,7 @@ public class Horista extends Funcionarios implements Pagamento{
     private double valorHora;
 
     public Horista(String nome, Strind id, String cargo, String setor, double horasTrabalhadas, double valorHora, double salario){
-        super(nome, id, cargo,setor, salario);
+        super(nome, id, cargo, setor, salario);
         this.horasTrabalhadas = horasTrabalhadas;
         this.valorHora = valorHora;
     }
