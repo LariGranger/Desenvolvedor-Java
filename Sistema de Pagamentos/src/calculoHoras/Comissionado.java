@@ -13,7 +13,7 @@ public class Comissionado extends Funcionarios implements Pagamento{
     public int getTotalVendas(){
         return totalVendas;
     }
-    public void setTotalVendas(int horasTrabalhadas){
+    public void setTotalVendas(int totalVendas){
         this.totalVendas = totalVendas;
     }
 
