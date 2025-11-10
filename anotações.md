@@ -4,6 +4,7 @@
 https://www.carloscafejava.com/#
 
 ## Atividades a serem feitas
+- [ ] Atividade Correção
 - [x] Atividades PathVariables
 - [x] Atividades Arrays
 - [ ] Atividade Carro
