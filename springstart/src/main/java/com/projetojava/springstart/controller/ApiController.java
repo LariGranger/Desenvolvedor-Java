@@ -25,7 +25,6 @@ public class ApiController {
         endpoints.put("Info", "GET /");
         endpoints.put("1 Cliente", "GET /cliente");
         endpoints.put("Vários Clientes", "GET /clientes");
-        endpoints.put("1 Produto", "GET /produto");
         endpoints.put("Vários Produtos", "GET /produtos");
         endpoints.put("Tudo Junto", "GET /dados");
         endpoints.put("Clientes por faixa etária", "GET /clientes-maiores-30");

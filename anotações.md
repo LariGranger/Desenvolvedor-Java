@@ -22,6 +22,6 @@ https://www.carloscafejava.com/#
 - [x] Anteriores - 8
 - [x] Anteriores - Conra Bancária
 - [x] Complementar - Curso
-- [ ] Assincrona - Copie e modifique o código
+- [x] Assincrona - Copie e modifique o código
 - [x] Assincrona - 30/10
 - [x] Assincrona - 18/10
