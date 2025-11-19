@@ -5,12 +5,12 @@ package com.api.lanchesdatia.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.api.lanchonetedatia.services.ProdutoServices;
+import com.api.lanchesdatia.services.LanchesServices;
 
 @RestController
 @RequestMapping("/produtos")
 public class LanchesController {
     // faz injenção de dependência de forma automatica pra não ter que usar, por exemplo, new ProdutoServices()
     @Autowired
-    private ProdutoServices produtoServices;
+    private LanchesServices lanchesServices;
 }
