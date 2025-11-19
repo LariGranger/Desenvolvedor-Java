@@ -1,3 +1,4 @@
+// define as entidades
 package com.api.lanchesdatia.models;
 
 import jakarta.persistence.Column;
@@ -11,12 +12,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
-@Table(name = "lanches")
-@Getter
+@Entity // define uma entidade
+@Table(name = "lanches") // de nome "produtos"
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Getter
+@AllArgsConstructor // cria um construtor completo com parâmetros
+@NoArgsConstructor // cria um construtor padrão, para uso na API
 
 public class Lanche {
     @Id
