@@ -1,6 +1,8 @@
 // define as entidades
 package com.api.lanchesdatia.models;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +21,7 @@ import lombok.Setter;
 @AllArgsConstructor // cria um construtor completo com parâmetros
 @NoArgsConstructor // cria um construtor padrão, para uso na API
 
-public class Lanche {
+public class Lanche  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
