@@ -4,6 +4,10 @@
 https://www.carloscafejava.com/#
 
 ## Atividades a serem feitas
+- [ ] Atividade - Cliente (Endereço)
+- [ ] Lanchonete da Tia (CLIENTE)
+- [ ] Atividade Lanchonete da Tia
+- [ ] Atividade AttDebug - Spring Boot
 - [ ] Atividade Correção
 - [x] Atividades PathVariables
 - [x] Atividades Arrays
@@ -22,6 +26,18 @@ https://www.carloscafejava.com/#
 - [x] Anteriores - 8
 - [x] Anteriores - Conra Bancária
 - [x] Complementar - Curso
+- [x] Assincrona - 22/11
+- [x] Assincrona - 21/11
+- [x] Assincrona - 08/11
 - [x] Assincrona - Copie e modifique o código
 - [x] Assincrona - 30/10
 - [x] Assincrona - 18/10
+
+
+
+
+
+
+
+
+
