@@ -42,16 +42,8 @@ public class LanchesServices {
             lanche.setCategoria(lancheAtualizado.getCategoria());
             lanche.setDisponivel(lancheAtualizado.getNome());
             lanche.setNome(lancheAtualizado.getNome());
-
         }
     }
-
-
-
-/*Endpoints Esperados:
-2. Buscar um produto específico - Retorna detalhes de um produto pelo ID
-
-
-5. Atualizar produto - Modifica informações de um produto existente
-6. Deletar produto - Remove um produto do cardápio */
-}
+    public void deletarLanche(Long id){
+            lancheRepository.deleteById(id);
+    }
