@@ -25,8 +25,8 @@ public class LanchesServices {
     }
     
     public List<Lanche> buscarPorCategoria(String categoria){
-        Optional<Lanche> lanchesPorCategoria = lancheRepository.findByCategoria(categoria);
-        return lanchesPorCategoria.orElse(null);
+        Optional<Lanche> lanchesPorCategoria = Optional.ofNullable(lancheRepository.findByCategoria(categoria));
+        return (List<Lanche>) lanchesPorCategoria.orElse(null);
     }
 
     public Lanche adicionarLanche(Lanche lanche){
@@ -34,6 +34,7 @@ public class LanchesServices {
     }
 
     public Lanche atualizarLanche(Long id, String nome, String descricao, double preco, String categoria, boolean disponivel, int tempoPreparo, Lanche lancheAtualizado){
+        Optional<Lanche> lancheExiste;
         if(lancheExiste.isPresent()){
             Lanche lanche = lancheExiste.get();
             lanche.setNome(lancheAtualizado.getNome());
@@ -47,3 +48,4 @@ public class LanchesServices {
     public void deletarLanche(Long id){
             lancheRepository.deleteById(id);
     }
+}

@@ -42,4 +42,9 @@ public class Lanche  {
     @Column(nullable = false)
     private int tempoPreparo;
 
+    public void setDisponivel(String nome2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDisponivel'");
+    }
+
 }
